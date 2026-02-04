@@ -1,0 +1,100 @@
+name: Bug report
+description: Report a problem with PRNudge behavior
+title: "[Bug] "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please do not include secrets or tokens.
+        If this is a security issue, do not file it here. Use the Security link instead.
+
+  - type: input
+    id: installation_id
+    attributes:
+      label: Installation ID
+      description: The GitHub App installation ID (required for support)
+      placeholder: "e.g., 12345678"
+    validations:
+      required: true
+
+  - type: input
+    id: repo_full_name
+    attributes:
+      label: Repository
+      description: The repository full name where it happened
+      placeholder: "org/repo"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected_area
+    attributes:
+      label: Affected area
+      options:
+        - PR Nudge (daily nudges)
+        - Weekly report
+        - Scheduler (GitHub Actions)
+        - Webhook ingestion
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: timeframe
+    attributes:
+      label: Time window (with timezone)
+      description: When did it happen?
+      placeholder: "e.g., 2026-02-04 09:30 -03:00"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you saw.
+      placeholder: "Describe the behavior you observed."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: "Describe the expected behavior."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide minimal steps. If it’s intermittent, describe patterns.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / output (redacted)
+      description: Paste relevant logs. Redact any secrets/tokens.
+      placeholder: "Paste logs here (redacted)."
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I confirm I did not include any secrets, tokens, or sensitive data.
+          required: true
+        - label: I checked existing issues to avoid duplicates.
+          required: true
