@@ -1,6 +1,6 @@
 # PRNudge Privacy Policy
 
-_Last updated: 2026/02/04
+_Last updated: 2026/02/04_
 
 This Privacy Policy explains how **PRNudge** ("we", "us") collects, uses, and shares information when you install and use the PRNudge GitHub App (the "Service").
 
