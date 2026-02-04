@@ -1,6 +1,6 @@
 # PRNudge Terms of Service (Beta)
 
-_Last updated: 2026-02-04
+_Last updated: 2026-02-04_
 
 These Terms of Service ("Terms") govern your use of the **PRNudge** GitHub App (the "Service"). By installing or using the Service, you agree to these Terms.
 
