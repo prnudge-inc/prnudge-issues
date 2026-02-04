@@ -1,0 +1,51 @@
+name: Support request
+description: Ask for help configuring or understanding PRNudge
+title: "[Support] "
+labels: ["question", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for configuration questions or assistance requests.
+        Do not include secrets or tokens.
+
+  - type: input
+    id: installation_id
+    attributes:
+      label: Installation ID
+      placeholder: "e.g., 12345678"
+    validations:
+      required: false
+
+  - type: input
+    id: repo_full_name
+    attributes:
+      label: Repository (if applicable)
+      placeholder: "org/repo"
+    validations:
+      required: false
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+      placeholder: "Describe what you're trying to do and where you're stuck."
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      placeholder: "List troubleshooting steps you've already attempted."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I confirm I did not include any secrets, tokens, or sensitive data.
+          required: true
