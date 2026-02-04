@@ -52,7 +52,7 @@ We retain all rights in the Service, including software, branding, and documenta
 ## 8. Data and privacy
 
 Our Privacy Policy describes how we process data:
-- **[Privacy Policy](../privacy)**
+- **[Privacy Policy](./privacy)**
 
 ## 9. Disclaimer of warranties
 
